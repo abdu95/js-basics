@@ -1,11 +1,13 @@
 let x = 10;
 
-x = x + 5;
-x += 5;
+//The result of an expression that includes a comparison operator is a boolean
 
-x = x * 3;
-x *= 3;
+//Relational operators
+console.log(x > y);
+console.log(x >= y);
+console.log(x < y);
+console.log(x <= y);
 
-// %=
-// -=
-// /=
+//Equality operators
+console.log(x === 1);
+console.log(x !== 1);
