@@ -1,11 +1,18 @@
+// Logical operators in JS: logical AND, logical OR, logical NOT operator
 
-//If a customer has more than 1000 points, 
-//they are 'gold' customer, otherwise
-//they are 'silver' customer
+//Logical AND (&&)
+//Returns TRUE if both operands are true
+console.log(true && true); //T
+console.log(false && false); //F
 
-let points = 110;
-//first we start with condition
-//then depending on the points, we set type to gold or silver >> this is ternary operator
-let type = points > 100 ? 'gold' : 'silver';
+let highIncome = false;
+let goodCreditScore = false;
+let eligibleForLoan = highIncome || goodCreditScore;
+console.log("Eligible ", eligibleForLoan);
 
-console.log(type);
+//Logical OR (||)
+//at least one operand evaluates to true >> result is true
+
+//NOT operator
+let applicationRefused = !eligibleForLoan;
+console.log("Application Refused ", applicationRefused);
